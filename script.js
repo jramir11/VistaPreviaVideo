@@ -1,5 +1,5 @@
 
-var vid = document.getElementById("VideoMP4-tag"); 
+/*var vid = document.getElementById("VideoMP4-tag"); 
 
 function playVid() { 
       vid.muted = true;
@@ -11,4 +11,13 @@ function pauseVid() {
 function mutedVid() {
     vid.muted = true;
 }
-
+*/
+let clip = document.querySelector(".vid")
+clip.addEventListener("mouseover", function () {
+  clip.play();
+  clip.muted = true;
+})
+clip.addEventListener("mouseout", function () {
+  clip.pause();
+  clip.muted = false;
+})
